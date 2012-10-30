@@ -1,0 +1,21 @@
+name: BanHammer
+version: 0.1.0005
+description: Hit a player with itemid 131 and they get kicked
+author: meiskam
+
+main: org.shininet.bukkit.banhammer.BanHammer
+database: false
+
+commands:
+  BanHammer:
+    description: Spawn a BanHammer
+    aliases: bh
+    
+permissions:
+  banhammer:
+    description: Gives all BanHammer permissions
+    children:
+      banhammer.spawn: true
+  banhammer.spawn:
+    description: Spawn a BanHammer
+    default: op
